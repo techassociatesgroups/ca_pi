@@ -15,10 +15,8 @@ const SendRequestButton = ({
   children = "Send Request"
 }: SendRequestButtonProps) => {
   const handleSendRequest = () => {
-    // Correctly formatted Google Form URL with prefill for serviceName
-    const googleFormUrl = `https://docs.google.com/forms/d/e/1FAIpQLScB5fMgNjRWmfBPMLX9o5nFG9iDNblUPVNzG15l-qdMf8pWCQ/viewform?usp=pp_url&entry.1423480051=${encodeURIComponent(serviceName)}`;
-    
-    // Open Google Form in new tab
+    // Always open the provided Google Form URL
+    const googleFormUrl = 'https://forms.gle/rh7pCaqQSELtPwJz6';
     window.open(googleFormUrl, '_blank');
   };
 

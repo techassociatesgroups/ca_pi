@@ -80,75 +80,34 @@ const HeroSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <Card className="border-dashed border-green-500">
-              <CardContent className="p-6">
-                <div className="text-orange-500 text-xs font-bold mb-2">
-                  2 Exclusive Offers
-                </div>
-                <h3 className="font-bold text-lg">
-                  FSSAI State License - Trader, Restaurant - 1 Year
-                </h3>
-                <ul className="mt-4 space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Preparation
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Filing
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />1
-                    Year State License
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    LEDGERS Platform
-                  </li>
-                </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="border-dashed border-green-500">
-              <CardContent className="p-6">
-                <div className="text-orange-500 text-xs font-bold mb-2">
-                  2 Exclusive Offers
-                </div>
-                <h3 className="font-bold text-lg">
-                  FSSAI State License - Manufacturer, Re labeler, Re packer - 1
-                  Year
-                </h3>
-                <ul className="mt-4 space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Preparation
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Filing
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />1
-                    Year State License
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    LEDGERS Platform
-                  </li>
-                </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
-              </CardContent>
-            </Card>
+            {/* Trader, Restaurant Card */}
+            <div className="rounded-xl border border-green-200 bg-green-50/50 p-6" style={{borderLeft: '4px solid #22c55e'}}>
+              <div className="text-green-700 font-semibold mb-2">2 Exclusive Offers</div>
+              <h3 className="font-bold text-lg mb-2">FSSAI State License - Trader, Restaurant - 1 Year</h3>
+              <ul className="mb-6 space-y-2 text-gray-700 text-sm">
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Application Preparation</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Application Filing</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> 1 Year State License</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> LEDGERS Platform</li>
+              </ul>
+              <a href="https://forms.gle/rh7pCaqQSELtPwJz6" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-[#ede9fe] text-[#3730a3] font-semibold hover:bg-[#c7d2fe]">Send Request</Button>
+              </a>
+            </div>
+            {/* Manufacturer, Re labeler, Re packer Card */}
+            <div className="rounded-xl border border-yellow-200 bg-yellow-50/50 p-6" style={{borderLeft: '4px solid #eab308'}}>
+              <div className="text-yellow-700 font-semibold mb-2">2 Exclusive Offers</div>
+              <h3 className="font-bold text-lg mb-2">FSSAI State License - Manufacturer, Re labeler, Re packer - 1 Year</h3>
+              <ul className="mb-6 space-y-2 text-gray-700 text-sm">
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Application Preparation</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Application Filing</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> 1 Year State License</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> LEDGERS Platform</li>
+              </ul>
+              <a href="https://forms.gle/rh7pCaqQSELtPwJz6" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-[#ede9fe] text-[#3730a3] font-semibold hover:bg-[#c7d2fe]">Send Request</Button>
+              </a>
+            </div>
           </div>
 
           <div className="flex justify-between mt-6 text-sm">

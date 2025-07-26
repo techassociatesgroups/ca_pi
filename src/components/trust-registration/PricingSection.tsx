@@ -26,30 +26,43 @@ const PricingSection = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <div className="border border-dashed border-gray-300 rounded-lg p-4">
-          <div className="flex justify-between items-center mb-2">
-            <h3 className="font-bold">Bengaluru</h3>
-            <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full">2 Exclusive Offers</div>
+        {/* Bengaluru Card */}
+        <div className="border border-green-300 rounded-lg bg-green-50">
+          <div className="bg-green-50 text-green-700 text-xs font-bold inline-block px-3 py-1 rounded-full mb-4 mt-4 ml-4">2 Exclusive Offers</div>
+          <div className="p-4">
+            <h3 className="text-xl font-bold mb-2 text-green-900">Bengaluru</h3>
+            <ul className="space-y-2 text-gray-700 mb-4">
+              <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Trust Deed Preparation</li>
+              <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> INR 500 Stamp Paper</li>
+              <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Trust PAN Card</li>
+            </ul>
+            <button
+              className="w-full mt-2 flex items-center justify-center gap-2 bg-purple-100 text-purple-900 font-semibold py-2 rounded-md border border-purple-200 hover:bg-purple-200"
+              onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+            >
+              <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Send Request
+            </button>
           </div>
-          <ul className="text-sm text-gray-600 space-y-2 mb-4">
-            <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> Trust Deed Preparation</li>
-            <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> INR 500 Stamp Paper</li>
-            <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> Trust PAN Card</li>
-          </ul>
-          <Button className="w-full bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
         </div>
-
-        <div className="border border-dashed border-gray-300 rounded-lg p-4">
-          <div className="flex justify-between items-center mb-2">
-            <h3 className="font-bold">Mumbai</h3>
-            <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full">2 Exclusive Offers</div>
+        {/* Mumbai Card */}
+        <div className="border border-green-300 rounded-lg bg-green-50">
+          <div className="bg-green-50 text-green-700 text-xs font-bold inline-block px-3 py-1 rounded-full mb-4 mt-4 ml-4">2 Exclusive Offers</div>
+          <div className="p-4">
+            <h3 className="text-xl font-bold mb-2 text-green-900">Mumbai</h3>
+            <ul className="space-y-2 text-gray-700 mb-4">
+              <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Trust Deed Preparation</li>
+              <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> INR 500 Stamp Paper</li>
+              <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Trust PAN Card</li>
+            </ul>
+            <button
+              className="w-full mt-2 flex items-center justify-center gap-2 bg-purple-100 text-purple-900 font-semibold py-2 rounded-md border border-purple-200 hover:bg-purple-200"
+              onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+            >
+              <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Send Request
+            </button>
           </div>
-          <ul className="text-sm text-gray-600 space-y-2 mb-4">
-            <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> Trust Deed Preparation</li>
-            <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> INR 500 Stamp Paper</li>
-            <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> Trust PAN Card</li>
-          </ul>
-          <Button className="w-full bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
         </div>
       </div>
       <div className="flex justify-between text-sm text-blue-600 mt-4">

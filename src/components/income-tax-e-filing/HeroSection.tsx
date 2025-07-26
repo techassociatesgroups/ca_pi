@@ -14,11 +14,11 @@ const HeroSection = () => {
     <Card className="overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="relative h-64 md:h-auto">
-          <img
-            src="/lovable-uploads/789c416a-2d10-43cc-91db-4eb7f4ef33ef.png"
-            alt="Income Tax E-Filing"
-            className="object-cover w-full h-full"
-          />
+        <img
+  src="/assets/income tax.jpg"
+  alt="Income Tax E-Filing"
+  className="object-cover w-full h-full"
+/>
           <div className="absolute inset-0 bg-blue-900 bg-opacity-70 p-6 flex flex-col justify-end">
             <h1 className="text-3xl font-bold text-white">
               Income Tax E-Filing

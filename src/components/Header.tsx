@@ -383,12 +383,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <div className="bg-gradient-to-r from-orange-400 to-green-500 text-white px-2 sm:px-3 py-1 sm:py-2 rounded-full text-sm sm:text-xl font-bold mr-1 sm:mr-2">
-                CA
-              </div>
-              <span className="text-green-600 text-sm sm:text-xl font-bold">
-                PI
-              </span>
+              <img src="/assets/logo.ico.jpg" alt="CAPI Consultants LLP Logo" className="h-14 w-auto mr-2" />
             </Link>
           </div>
 

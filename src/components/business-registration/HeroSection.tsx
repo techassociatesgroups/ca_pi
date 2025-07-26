@@ -12,9 +12,7 @@ const HeroSection = () => {
                     <div className="absolute inset-0 bg-blue-900 bg-opacity-70 flex flex-col justify-center items-center text-white p-4 text-center">
                         <h2 className="text-2xl font-bold">COMPANY</h2>
                         <h2 className="text-2xl font-bold">REGISTRATION</h2>
-                        <div className="text-xs mt-2 border-t border-b py-1">
-                            Find Business Registration and Compliances
-                        </div>
+                        <div className="text-xs mt-2 border-t border-b py-1">Find Business Registration and Compliances</div>
                     </div>
                 </div>
                 <div>

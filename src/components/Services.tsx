@@ -1,6 +1,7 @@
 
 import { Building2, FileText, Copyright, Scale, Calculator, UserCheck, Globe, CreditCard, Briefcase, Users, FileCheck, Gavel } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SendRequestButton from '@/components/ui/SendRequestButton';
 
 const Services = () => {
   const services = [

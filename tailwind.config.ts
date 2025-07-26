@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -19,48 +20,59 @@ export default {
 		},
 		extend: {
 			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+				// Modern Fintech-Inspired Palette
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: "#0033cc", // Deep Blue
+					light: "#3366ff",
+					dark: "#001a66",
+					foreground: "#ffffff"
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: "#00bfae", // Teal Accent
+					light: "#5eead4",
+					dark: "#008c7a",
+					foreground: "#ffffff"
 				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+				background: {
+					DEFAULT: "#f4f7fa", // Light Neutral
+					dark: "#e5e9ef"
+				},
+				foreground: {
+					DEFAULT: "#1a202c", // Cool Grey for text
+					muted: "#6b7280"
+				},
+				border: "#e2e8f0", // Cool Grey border
+				input: "#f1f5f9", // Slightly darker neutral for inputs
+				ring: "#00bfae", // Teal accent for focus rings
+				card: {
+					DEFAULT: "#ffffff",
+					foreground: "#1a202c"
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: "#e5e9ef",
+					foreground: "#6b7280"
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: "#00bfae",
+					foreground: "#ffffff"
 				},
 				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
+					DEFAULT: "#ffffff",
+					foreground: "#1a202c"
 				},
-				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+				destructive: {
+					DEFAULT: "#e53e3e",
+					foreground: "#ffffff"
 				},
 				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					DEFAULT: "#f4f7fa",
+					foreground: "#0033cc",
+					primary: "#0033cc",
+					'primary-foreground': "#ffffff",
+					accent: "#00bfae",
+					'accent-foreground': "#ffffff",
+					border: "#e2e8f0",
+					ring: "#00bfae"
 				}
 			},
 			borderRadius: {
@@ -92,5 +104,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [tailwindcssAnimate],
 } satisfies Config;

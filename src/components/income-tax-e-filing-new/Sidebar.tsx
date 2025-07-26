@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 import { useCart } from '@/contexts/CartContext';
 import { toast } from 'sonner';
 
@@ -21,33 +21,41 @@ const Sidebar = () => {
   return (
     <div className="space-y-6">
       <div className="bg-white p-6 rounded-lg shadow-sm border">
-        <h3 className="text-lg font-semibold mb-4">Quick Contact</h3>
-        
-        <div className="space-y-4">
-          <Input placeholder="Name" />
-          <Input placeholder="Email" type="email" />
-          
-          <div className="flex gap-2">
-            <Select>
-              <SelectTrigger className="w-20">
-                <SelectValue placeholder="+91" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="+91">+91</SelectItem>
-              </SelectContent>
-            </Select>
-            <Input placeholder="Phone" className="flex-1" />
-          </div>
-          
-          <Input placeholder="Enter GSTIN to get 18% GST Credit" />
-          
-          <Button 
-            onClick={handleGetStarted}
-            className="w-full bg-green-600 hover:bg-green-700"
-          >
-            Add to Cart
-          </Button>
+        <div className="text-center">
+          <Phone className="mx-auto h-12 w-12 text-gray-400 mb-3" />
+          <h3 className="text-xl font-bold text-center">Reach us now</h3>
+          <p className="text-center text-sm text-gray-600 mt-2 mb-6">
+            Fill out the form below and we'll contact you immediately.
+          </p>
         </div>
+        <form className="space-y-4">
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+            <Input id="name" placeholder="Enter your name" />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+            <Input id="email" type="email" placeholder="Enter your email" />
+          </div>
+          <div>
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
+            <div className="flex gap-2">
+              <Select>
+                <SelectTrigger className="w-20">
+                  <SelectValue placeholder="+91" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="+91">+91</SelectItem>
+                </SelectContent>
+              </Select>
+              <Input id="phone" placeholder="Enter your phone number" className="flex-1" />
+            </div>
+          </div>
+          <Input placeholder="Enter GSTIN to get 18% GST Credit" />
+          <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 font-bold text-base">
+            Contact Us
+          </Button>
+        </form>
       </div>
 
       <div className="bg-white p-6 rounded-lg shadow-sm border">

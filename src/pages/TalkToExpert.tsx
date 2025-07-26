@@ -47,7 +47,8 @@ const TalkToExpert = () => {
       description: "Instant support through our chat system",
       icon: MessageSquare,
       action: () => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank'),
-      buttonText: "Start Chat",
+      buttonText: "Apply Now",
+      ariaLabel: "Apply Now (opens Google Form in new tab)",
       detail: "Available 9 AM - 6 PM"
     }
   ];
@@ -103,8 +104,10 @@ const TalkToExpert = () => {
                   <p className="text-sm text-muted-foreground mb-4">{method.detail}</p>
                   <Button 
                     onClick={method.action}
-                    className="w-full"
+                    aria-label={method.ariaLabel || method.buttonText}
+                    className="w-full mt-4"
                   >
+                    <svg className="inline-block mr-2 h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                     {method.buttonText}
                   </Button>
                 </CardContent>

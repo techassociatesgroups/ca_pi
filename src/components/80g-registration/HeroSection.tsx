@@ -58,8 +58,10 @@ const HeroSection = () => {
                 className="w-full mt-4"
                 style={{ backgroundColor: '#C5BAFF', borderColor: '#C5BAFF', color: '#000' }}
                 onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+                aria-label="Apply Now (opens Google Form in new tab)"
               >
-                Enquire Now
+                <svg className="inline-block mr-2 h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Apply Now
               </Button>
             </CardContent>
           </Card>

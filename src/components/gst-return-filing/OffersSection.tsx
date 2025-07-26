@@ -5,55 +5,35 @@ const OffersSection = () => {
   return (
     <section>
       <div className="grid md:grid-cols-2 gap-8">
-        <div className="border rounded-lg p-6 shadow-sm bg-stone-50">
-          <span className="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">
-            2 Exclusive Offers
-          </span>
-          <h3 className="text-lg font-bold mt-2">
+        {/* Return Filings Upto 40 Lakhs Turnover Card */}
+        <div className="rounded-xl border border-green-200 bg-green-50/50 p-6" style={{borderLeft: '4px solid #22c55e'}}>
+          <div className="text-green-700 font-semibold mb-2">2 Exclusive Offers</div>
+          <h3 className="font-bold text-lg mb-2">
             Return Filings Upto 40 Lakhs Turnover
           </h3>
-          <ul className="space-y-2 text-gray-600 mt-4 text-sm">
-            <li className="flex items-start">
-              <Check className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" />{" "}
-              <span>LEDGERS GST Software</span>
-            </li>
-            <li className="flex items-start">
-              <Check className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" />{" "}
-              <span>12 Months GSTR 1 Filing</span>
-            </li>
-            <li className="flex items-start">
-              <Check className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" />{" "}
-              <span>12 Months GSTR 3B Filing</span>
-            </li>
+          <ul className="mb-6 space-y-2 text-gray-700 text-sm">
+            <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> LEDGERS GST Software</li>
+            <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> 12 Months GSTR 1 Filing</li>
+            <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> 12 Months GSTR 3B Filing</li>
           </ul>
-          <Button className="w-full mt-6 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-            ADD
-          </Button>
+          <a href="https://forms.gle/rh7pCaqQSELtPwJz6" target="_blank" rel="noopener noreferrer">
+            <Button className="w-full bg-[#ede9fe] text-[#3730a3] font-semibold hover:bg-[#c7d2fe]">Send Request</Button>
+          </a>
         </div>
-        <div className="border rounded-lg p-6 shadow-sm bg-stone-50">
-          <span className="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">
-            2 Exclusive Offers
-          </span>
-          <h3 className="text-lg font-bold mt-2">
+        {/* Return Filings Upto 1 Crore Turnover Card */}
+        <div className="rounded-xl border border-yellow-200 bg-yellow-50/50 p-6" style={{borderLeft: '4px solid #eab308'}}>
+          <div className="text-yellow-700 font-semibold mb-2">2 Exclusive Offers</div>
+          <h3 className="font-bold text-lg mb-2">
             Return Filings Upto 1 Crore Turnover
           </h3>
-          <ul className="space-y-2 text-gray-600 mt-4 text-sm">
-            <li className="flex items-start">
-              <Check className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" />{" "}
-              <span>LEDGERS GST Software</span>
-            </li>
-            <li className="flex items-start">
-              <Check className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" />{" "}
-              <span>12 Months GSTR 1 Filing</span>
-            </li>
-            <li className="flex items-start">
-              <Check className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" />{" "}
-              <span>12 Months GSTR 3B Filing</span>
-            </li>
+          <ul className="mb-6 space-y-2 text-gray-700 text-sm">
+            <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> LEDGERS GST Software</li>
+            <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> 12 Months GSTR 1 Filing</li>
+            <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> 12 Months GSTR 3B Filing</li>
           </ul>
-          <Button className="w-full mt-6 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-            ADD
-          </Button>
+          <a href="https://forms.gle/rh7pCaqQSELtPwJz6" target="_blank" rel="noopener noreferrer">
+            <Button className="w-full bg-[#ede9fe] text-[#3730a3] font-semibold hover:bg-[#c7d2fe]">Send Request</Button>
+          </a>
         </div>
       </div>
       <div className="flex justify-between items-center mt-6 text-sm">

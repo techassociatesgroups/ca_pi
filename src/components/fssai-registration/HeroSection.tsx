@@ -67,74 +67,46 @@ const HeroSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <Card className="border-dashed border-green-500">
-              <CardContent className="p-6">
-                <div className="text-orange-500 text-xs font-bold mb-2">
-                  2 Exclusive Offers
-                </div>
-                <h3 className="font-bold text-lg">
-                  FSSAI Registration - 1 Year
-                </h3>
-                <ul className="mt-4 space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Preparation
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Filing
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />1
-                    Year Registration
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    LEDGERS Platform
-                  </li>
+            {/* FSSAI Registration - 1 Year Card */}
+            <div className="border border-green-300 rounded-lg bg-green-50">
+              <div className="bg-green-50 text-green-700 text-xs font-bold inline-block px-3 py-1 rounded-full mb-4 mt-4 ml-4">2 Exclusive Offers</div>
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2 text-green-900">FSSAI Registration - 1 Year</h3>
+                <ul className="space-y-2 text-gray-700 mb-4">
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Application Preparation</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Application Filing</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> 1 Year Registration</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> LEDGERS Platform</li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
+                <button
+                  className="w-full mt-2 flex items-center justify-center gap-2 bg-purple-100 text-purple-900 font-semibold py-2 rounded-md border border-purple-200 hover:bg-purple-200"
+                  onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
                 >
-                  ADD
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="border-dashed border-green-500">
-              <CardContent className="p-6">
-                <div className="text-orange-500 text-xs font-bold mb-2">
-                  2 Exclusive Offers
-                </div>
-                <h3 className="font-bold text-lg">
-                  FSSAI Registration - 3 Years
-                </h3>
-                <ul className="mt-4 space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Preparation
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Filing
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />3
-                    Years Registration
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    LEDGERS Platform
-                  </li>
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Send Request
+                </button>
+              </div>
+            </div>
+            {/* FSSAI Registration - 3 Years Card */}
+            <div className="border border-green-300 rounded-lg bg-green-50">
+              <div className="bg-green-50 text-green-700 text-xs font-bold inline-block px-3 py-1 rounded-full mb-4 mt-4 ml-4">2 Exclusive Offers</div>
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2 text-green-900">FSSAI Registration - 3 Years</h3>
+                <ul className="space-y-2 text-gray-700 mb-4">
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Application Preparation</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Application Filing</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> 3 Years Registration</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> LEDGERS Platform</li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
+                <button
+                  className="w-full mt-2 flex items-center justify-center gap-2 bg-purple-100 text-purple-900 font-semibold py-2 rounded-md border border-purple-200 hover:bg-purple-200"
+                  onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
                 >
-                  ADD
-                </Button>
-              </CardContent>
-            </Card>
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Send Request
+                </button>
+              </div>
+            </div>
           </div>
 
           <div className="flex justify-between mt-6 text-sm">

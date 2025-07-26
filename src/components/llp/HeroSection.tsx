@@ -14,6 +14,11 @@ const HeroSection = () => {
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         <div className="md:col-span-4 bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-6 rounded-lg flex flex-col justify-between">
+          <img
+            src="/assets/llp-registration-process.jpg"
+            alt="LLP Registration Process"
+            className="mb-4 rounded-lg w-full h-auto"
+          />
           <div>
             <h2 className="text-3xl font-bold">LLP REGISTRATION</h2>
             <div className="border-t border-white/50 my-4"></div>

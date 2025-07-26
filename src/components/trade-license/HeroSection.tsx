@@ -15,10 +15,10 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         <div className="lg:col-span-4">
           <div
-            className="bg-blue-600 rounded-lg text-white p-8 flex flex-col items-center justify-center h-80 bg-cover bg-center"
+            className="bg-blue-600 rounded-lg text-white p-8 flex flex-col items-center justify-center h-48 bg-contain bg-center"
             style={{
               backgroundImage:
-                "url('/lovable-uploads/789c416a-2d10-43cc-91db-4eb7f4ef33ef.png')",
+                "url('/assets/trade-license.png')",
             }}
           ></div>
           <div className="mt-6">
@@ -64,76 +64,34 @@ const HeroSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <Card className="border-dashed border-green-500">
-              <CardContent className="p-6">
-                <div className="flex justify-between items-start">
-                  <h3 className="font-bold text-lg">Chennai</h3>
-                  <img
-                    src="https://indiafilings.com/images/home/assured-by-ledgers.svg"
-                    alt="Assured by Ledgers"
-                  />
-                </div>
-                <ul className="mt-4 space-y-2 text-gray-600">
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Preparation
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Filing
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Trade License Number
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />1
-                    Year Trade License
-                  </li>
-                </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="border-dashed border-green-500">
-              <CardContent className="p-6">
-                <div className="flex justify-between items-start">
-                  <h3 className="font-bold text-lg">Telangana</h3>
-                  <img
-                    src="https://indiafilings.com/images/home/assured-by-ledgers.svg"
-                    alt="Assured by Ledgers"
-                  />
-                </div>
-                <ul className="mt-4 space-y-2 text-gray-600">
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Preparation
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Application Filing
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />
-                    Trade License Number
-                  </li>
-                  <li className="flex items-center">
-                    <ChevronRight className="w-4 h-4 mr-2 text-green-500" />1
-                    Year Trade License
-                  </li>
-                </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
-              </CardContent>
-            </Card>
+            {/* Chennai Card */}
+            <div className="rounded-xl border border-green-200 bg-green-50/50 p-6" style={{borderLeft: '4px solid #22c55e'}}>
+              <div className="text-green-700 font-semibold mb-2">3 Exclusive Offers</div>
+              <h3 className="font-bold text-lg mb-2">Chennai</h3>
+              <ul className="mb-6 space-y-2 text-gray-700">
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Application Preparation</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Application Filing</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Trade License Number</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> 1 Year Trade License</li>
+              </ul>
+              <a href="https://forms.gle/rh7pCaqQSELtPwJz6" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-[#ede9fe] text-[#3730a3] font-semibold hover:bg-[#c7d2fe]">Send Request</Button>
+              </a>
+            </div>
+            {/* Telangana Card */}
+            <div className="rounded-xl border border-yellow-200 bg-yellow-50/50 p-6" style={{borderLeft: '4px solid #eab308'}}>
+              <div className="text-yellow-700 font-semibold mb-2">2 Exclusive Offers</div>
+              <h3 className="font-bold text-lg mb-2">Telangana</h3>
+              <ul className="mb-6 space-y-2 text-gray-700">
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Application Preparation</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Application Filing</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> Trade License Number</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✔️</span> 1 Year Trade License</li>
+              </ul>
+              <a href="https://forms.gle/rh7pCaqQSELtPwJz6" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-[#ede9fe] text-[#3730a3] font-semibold hover:bg-[#c7d2fe]">Send Request</Button>
+              </a>
+            </div>
           </div>
 
           <div className="flex justify-between mt-6 text-sm">

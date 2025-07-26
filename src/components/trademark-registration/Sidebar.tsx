@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag, Phone } from "lucide-react";
 
 const Sidebar = () => {
   return (
@@ -11,30 +11,40 @@ const Sidebar = () => {
         <Card>
             <CardContent className="pt-6">
                 <div className="text-center">
-                    <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
-                    <h3 className="mt-2 text-lg font-medium text-gray-900">Your cart is empty</h3>
-                    <p className="mt-1 text-sm text-gray-500">Browse our services and add some services in cart!</p>
-                </div>
-                <div className="mt-6">
-                    <p className="text-center text-sm">
-                        Existing User? <a href="#" className="font-medium text-green-600 hover:text-green-500">Login</a>
+                    <Phone className="mx-auto h-12 w-12 text-gray-400 mb-3" />
+                    <h3 className="text-xl font-bold text-center">Reach us now</h3>
+                    <p className="text-center text-sm text-gray-600 mt-2 mb-6">
+                        Fill out the form below and we'll contact you immediately.
                     </p>
-                    <form className="mt-4 space-y-4">
-                        <Input placeholder="Name" />
-                        <Input type="email" placeholder="Email" />
-                        <Input type="tel" placeholder="Phone" />
-                         <div className="flex items-center space-x-2">
-                            <Checkbox id="gst-credit" />
-                            <label
-                                htmlFor="gst-credit"
-                                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                            >
-                                Enter GSTIN to get 18% GST Credit
-                            </label>
-                        </div>
-                        <Button className="w-full bg-green-600 hover:bg-green-700">Get Started</Button>
-                    </form>
                 </div>
+                <form className="space-y-4">
+                    <div>
+                        <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                        <Input id="name" placeholder="Enter your name" />
+                    </div>
+                    <div>
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                        <Input id="email" type="email" placeholder="Enter your email" />
+                    </div>
+                    <div>
+                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
+                        <div className="flex">
+                            <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md">
+                                +91
+                            </span>
+                            <Input id="phone" type="tel" placeholder="Enter your phone number" className="rounded-l-none" />
+                        </div>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                        <Checkbox id="gst-credit" />
+                        <label htmlFor="gst-credit" className="text-sm font-medium leading-none cursor-pointer">
+                            Enter GSTIN to get 18% GST Credit
+                        </label>
+                    </div>
+                    <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 font-bold text-base">
+                        Contact Us
+                    </Button>
+                </form>
             </CardContent>
         </Card>
       <Card>

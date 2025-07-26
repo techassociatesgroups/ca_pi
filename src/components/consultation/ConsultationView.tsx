@@ -14,33 +14,39 @@ import OffersSection from "./OffersSection";
 const ConsultationCard = ({
   type,
   features,
+  color
 }: {
   type: string;
   features: string[];
+  color: 'green' | 'yellow';
 }) => {
+  const borderColor = color === 'green' ? 'border-green-300' : 'border-yellow-300';
+  const bgColor = color === 'green' ? 'bg-green-50' : 'bg-yellow-50';
+  const headingColor = color === 'green' ? 'text-green-900' : 'text-yellow-900';
+  const badgeColor = color === 'green' ? 'text-green-600' : 'text-yellow-700';
+  const badgeBg = color === 'green' ? 'bg-green-50' : 'bg-yellow-50';
   return (
-    <Card className="border-dashed border-green-500 transition-shadow hover:shadow-lg">
-      <div className="bg-green-100 text-green-700 text-xs font-bold py-1 px-3 inline-block rounded-br-lg rounded-tl-lg">
-        2 Exclusive Offers
-      </div>
-      <CardContent className="p-6">
-        <h3 className="text-lg font-bold">30 Minutes - {type} Consultation</h3>
-        <ul className="mt-4 space-y-2 text-sm text-gray-600">
+    <div className={`border ${borderColor} rounded-lg ${bgColor}`}>
+      <div className={`text-xs font-bold ${badgeColor} mb-2 mt-4 ml-4`}>2 Exclusive Offers</div>
+      <div className="p-4">
+        <h3 className={`font-bold mb-2 ${headingColor}`}>30 Minutes - {type} Consultation</h3>
+        <ul className="space-y-2 text-sm text-gray-700 mb-4">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start">
-              <ChevronRight className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+              <span className="text-green-500 mr-2 mt-1">&#10003;</span>
               <span>{feature}</span>
             </li>
           ))}
         </ul>
-        <Button
-          variant="outline"
-          className="mt-6 w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600 font-bold"
+        <button
+          className="w-full mt-2 flex items-center justify-center gap-2 bg-purple-100 text-purple-900 font-semibold py-2 rounded-md border border-purple-200 hover:bg-purple-200"
+          onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
         >
-          ADD
-        </Button>
-      </CardContent>
-    </Card>
+          <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Send Request
+        </button>
+      </div>
+    </div>
   );
 };
 
@@ -53,11 +59,15 @@ const ConsultationView = () => {
             <div
               className="lg:col-span-5 bg-cover bg-center"
               style={{
-                backgroundImage:
-                  "url('/lovable-uploads/4ce05405-f89f-4b07-b491-a85dafeaea7b.png')",
+                backgroundImage: undefined,
               }}
             >
               <div className="bg-blue-700/80 min-h-[250px] h-full flex flex-col justify-center items-center text-center p-8 text-white">
+                <img
+                  src="/assets/business-setup.jpg"
+                  alt="Business Consultation"
+                  className="w-full h-48 object-cover mb-6 rounded"
+                />
                 <h2 className="text-3xl font-bold">Need Help With Business?</h2>
                 <p className="text-lg mt-2">Consult Our Professionals</p>
               </div>
@@ -113,6 +123,7 @@ const ConsultationView = () => {
             "Corporate Financial Consultation",
             "Consultation report - Financial",
           ]}
+          color="green"
         />
         <ConsultationCard
           type="Lawyer"
@@ -124,6 +135,7 @@ const ConsultationView = () => {
             "Corporate Legal Consultation",
             "Consultation report - Legal",
           ]}
+          color="yellow"
         />
       </div>
 

@@ -15,6 +15,11 @@ const HeroSection = () => {
       <div className="grid md:grid-cols-12 gap-4">
         <div className="md:col-span-4 p-4">
           <div className="bg-blue-600 text-white rounded-lg p-6 flex flex-col items-center text-center">
+            <img
+              src="/assets/digital-signature-banner.jpg"
+              alt="Digital Signature"
+              className="mb-4 rounded-lg w-full h-48 object-cover"
+            />
             <h2 className="text-2xl font-bold">DIGITAL SIGNATURE</h2>
             <p className="text-xs mt-2">
               Shipping Across India • DSC Token • DSC Support Service
@@ -59,44 +64,44 @@ const HeroSection = () => {
           </Select>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Card className="border-orange-200">
-              <CardContent className="p-4">
-                <div className="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full inline-block mb-2">
-                  2 Exclusive Offers
-                </div>
-                <h3 className="font-bold mb-2">Individual</h3>
-                <ul className="space-y-1 text-xs text-gray-600">
-                  <li>&gt; DSC Crypto Token</li>
-                  <li>&gt; DSC Downloading</li>
-                  <li>&gt; Shipping & Handling</li>
+            {/* Individual Card */}
+            <div className="border border-green-300 rounded-lg bg-green-50">
+              <div className="bg-green-50 text-green-700 text-xs font-bold inline-block px-3 py-1 rounded-full mb-4 mt-4 ml-4">2 Exclusive Offers</div>
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2 text-green-900">Individual</h3>
+                <ul className="space-y-2 text-gray-700 mb-4">
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> DSC Crypto Token</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> DSC Downloading</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Shipping & Handling</li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="w-full mt-4 border-green-600 text-green-600 hover:bg-green-50 hover:text-green-700"
+                <button
+                  className="w-full mt-2 flex items-center justify-center gap-2 bg-purple-100 text-purple-900 font-semibold py-2 rounded-md border border-purple-200 hover:bg-purple-200"
+                  onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
                 >
-                  ADD
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="border-orange-200">
-              <CardContent className="p-4">
-                <div className="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full inline-block mb-2">
-                  2 Exclusive Offers
-                </div>
-                <h3 className="font-bold mb-2">Company</h3>
-                <ul className="space-y-1 text-xs text-gray-600">
-                  <li>&gt; DSC Crypto Token</li>
-                  <li>&gt; DSC Downloading</li>
-                  <li>&gt; Shipping & Handling</li>
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Send Request
+                </button>
+              </div>
+            </div>
+            {/* Company Card */}
+            <div className="border border-green-300 rounded-lg bg-green-50">
+              <div className="bg-green-50 text-green-700 text-xs font-bold inline-block px-3 py-1 rounded-full mb-4 mt-4 ml-4">2 Exclusive Offers</div>
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2 text-green-900">Company</h3>
+                <ul className="space-y-2 text-gray-700 mb-4">
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> DSC Crypto Token</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> DSC Downloading</li>
+                  <li className="flex items-start"><span className="text-green-500 mr-2 mt-1">&#10003;</span> Shipping & Handling</li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="w-full mt-4 border-green-600 text-green-600 hover:bg-green-50 hover:text-green-700"
+                <button
+                  className="w-full mt-2 flex items-center justify-center gap-2 bg-purple-100 text-purple-900 font-semibold py-2 rounded-md border border-purple-200 hover:bg-purple-200"
+                  onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
                 >
-                  ADD
-                </Button>
-              </CardContent>
-            </Card>
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Send Request
+                </button>
+              </div>
+            </div>
           </div>
 
           <div className="flex justify-between items-center mt-6 text-sm">
