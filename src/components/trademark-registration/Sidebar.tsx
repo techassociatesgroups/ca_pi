@@ -1,9 +1,9 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
-import { ShoppingBag, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
 const Sidebar = () => {
   return (
@@ -47,20 +47,7 @@ const Sidebar = () => {
                 </form>
             </CardContent>
         </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle>Offers and discounts</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="flex items-center">
-            <img src="/lovable-uploads/b82916f3-a462-4bfc-ac5e-a5da577d3e2a.png" alt="Brand Guard" className="h-10 w-10 mr-4"/>
-            <div>
-              <p className="font-semibold">Brand Guard - Trademark Protection Platform</p>
-              <p className="text-sm text-gray-500">Monitor and protect your brand from infringement</p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+      
     </aside>
   );
 };
