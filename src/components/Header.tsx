@@ -357,21 +357,21 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm relative z-50">
       {/* Top contact bar */}
-      <div className="bg-green-50 py-2 px-2 sm:px-4">
+      <div className="bg-[#C4D9FF] py-2 px-2 sm:px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-xs sm:text-sm">
           <div className="flex items-center space-x-2 sm:space-x-4">
             <div className="flex items-center space-x-1">
-              <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-green-600" />
-              <span className="hidden sm:inline">
+              <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-[#003366]" />
+              <span className="hidden sm:inline text-[#003366] font-bold">
                 +91 8106223262/7659902579
               </span>
             </div>
             <div className="flex items-center space-x-1">
-              <Mail className="h-3 w-3 sm:h-4 sm:w-4 text-green-600" />
-              <span className="hidden sm:inline">hemanth@capicons.in</span>
+              <Mail className="h-3 w-3 sm:h-4 sm:w-4 text-[#003366]" />
+              <span className="hidden sm:inline text-[#003366] font-bold">hemanth@capicons.in</span>
             </div>
           </div>
-          <div className="hidden lg:block text-green-600 text-xs">
+          <div className="hidden lg:block text-[#003366] text-xs font-bold">
             Trusted by 10,00,000+ businesses across India
           </div>
         </div>
@@ -394,7 +394,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:text-green-600 focus:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:text-green-600 h-auto text-xs">
+                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] data-[state=open]:bg-[#C4D9FF] data-[active]:bg-[#C4D9FF] focus:text-[#003366] h-auto text-xs">
                       Startup
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -405,49 +405,49 @@ const Header = () => {
                           </h4>
                           <Link
                             to="/proprietorship"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Proprietorship
                           </Link>
                           <Link
                             to="/partnership"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Partnership Firm
                           </Link>
                           <Link
                             to="/one-person-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             One Person Company
                           </Link>
                           <Link
                             to="/limited-liability-partnership"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Limited Liability Partnership
                           </Link>
                           <Link
                             to="/private-limited-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Private Limited Company
                           </Link>
                           <Link
                             to="/public-limited-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Public Limited Company
                           </Link>
                           <Link
                             to="/section-8-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Section 8 Company
                           </Link>
                           <Link
                             to="/producer-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Producer Company
                           </Link>
@@ -459,7 +459,7 @@ const Header = () => {
                           </Link>
                           <Link
                             to="/indian-subsidiary"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Indian Subsidiary
                           </Link>
@@ -470,25 +470,25 @@ const Header = () => {
                           </h4>
                           <Link
                             to="/setup-business-uae"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Setup a Business in UAE
                           </Link>
                           <Link
                             to="#"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Setup a Business in USA
                           </Link>
                           <Link
                             to="#"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Setup a Business in Singapore
                           </Link>
                           <Link
                             to="#"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Setup a Business in UK
                           </Link>
@@ -497,13 +497,13 @@ const Header = () => {
                           </h4>
                           <Link
                             to="/trust-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Trust Registration
                           </Link>
                           <Link
                             to="/society-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Society Registration
                           </Link>
@@ -533,7 +533,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:text-green-600 focus:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:text-green-600 h-auto text-xs">
+                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] data-[state=open]:bg-[#C4D9FF] data-[active]:bg-[#C4D9FF] focus:text-[#003366] h-auto text-xs">
                       Registrations
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -541,43 +541,43 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/startup-india"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Startup India
                           </Link>
                           <Link
                             to="/trade-license"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Trade License
                           </Link>
                           <Link
                             to="/fssai-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             FSSAI Registration
                           </Link>
                           <Link
                             to="/fssai-license"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             FSSAI License
                           </Link>
                           <Link
                             to="/halal-certification"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Halal License & Certification
                           </Link>
                           <Link
                             to="/icegate-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ICEGATE Registration
                           </Link>
                           <Link
                             to="/import-export-code"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Import Export Code
                           </Link>
@@ -585,68 +585,68 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/legal-entity-identifier-code"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Legal Entity Identifier Code
                           </Link>
                           <Link
                             to="/iso-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ISO Registration
                           </Link>
                           <Link
                             to="/pf-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             PF Registration
                           </Link>
                           <Link
                             to="/12a-80g-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             12A and 80G Registration
                           </Link>
 
                           <Link
                             to="/esi-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ESI Registration
                           </Link>
                           <Link
                             to="/professional-tax-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Professional Tax Registration
                           </Link>
                           <Link
                             to="/rcmc-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             RCMC Registration
                           </Link>
                           <Link
                             to="/rera-registration-for-agents"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             TN RERA Registration for Agents
                           </Link>
                           <Link
                             to="/demat-of-shares"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Demat of Shares
                           </Link>
                           <Link
                             to="/winding-up-llp"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Winding Up - LLP
                           </Link>
                           <Link
                             to="/winding-up-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Winding Up - Company
                           </Link>
@@ -654,55 +654,55 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/12a-80g-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             12A and 80G Registration
                           </Link>
                           <Link
                             to="/12a-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             12A Registration
                           </Link>
                           <Link
                             to="/80g-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             80G Registration
                           </Link>
                           <Link
                             to="/udyam-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Udyam Registration
                           </Link>
                           <Link
                             to="/fcra-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             FCRA Registration
                           </Link>
                           <Link
                             to="/apeda-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             APEDA Registration
                           </Link>
                           <Link
                             to="/barcode-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Barcode Registration
                           </Link>
                           <Link
                             to="/bis-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             BIS Registration
                           </Link>
                           <Link
                             to="/certificate-of-incumbency"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Certificate of Incumbency
                           </Link>
@@ -710,43 +710,43 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/darpan-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Darpan Registration
                           </Link>
                           <Link
                             to="/digital-signature"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Digital Signature
                           </Link>
                           <Link
                             to="/shop-and-establishment-act"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Shop Act Registration
                           </Link>
                           <Link
                             to="/drug-license"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Drug License
                           </Link>
                           <Link
                             to="/udyam-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Udyam Registration
                           </Link>
                           <Link
                             to="/fcra-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             FCRA Registration
                           </Link>
                           <Link
                             to="/fire-license"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Fire License
                           </Link>
@@ -760,7 +760,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:text-green-600 focus:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:text-green-600 h-auto text-xs">
+                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] data-[state=open]:bg-[#C4D9FF] data-[active]:bg-[#C4D9FF] focus:text-[#003366] h-auto text-xs">
                       Trademark
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -768,19 +768,19 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/trademark-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Trademark Registration
                           </Link>
                           <Link
                             to="/copyright-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Copyright Registration
                           </Link>
                           <Link
                             to="/patent-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Patent Registration
                           </Link>
@@ -794,7 +794,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:text-green-600 focus:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:text-green-600 h-auto text-xs">
+                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] data-[state=open]:bg-[#C4D9FF] data-[active]:bg-[#C4D9FF] focus:text-[#003366] h-auto text-xs">
                       GST
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -803,7 +803,7 @@ const Header = () => {
                           <NavigationMenuLink asChild>
                             <Link
                               to="/gst-registration"
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                             >
                               <div className="text-sm font-medium leading-none">
                                 GST Registration
@@ -816,7 +816,7 @@ const Header = () => {
                           <NavigationMenuLink asChild>
                             <Link
                               to="/gst-return-filing"
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                             >
                               <div className="text-sm font-medium leading-none">
                                 GST Return Filing by Accountant
@@ -829,7 +829,7 @@ const Header = () => {
                           <NavigationMenuLink asChild>
                             <Link
                               to="/gst-annual-return-filing-gstr9"
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                             >
                               <div className="text-sm font-medium leading-none">
                                 GST Annual Return Filing (GSTR - 9)
@@ -841,7 +841,7 @@ const Header = () => {
                           </NavigationMenuLink>
                           <Link
                             to="/gst-lut-form"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             <div className="text-sm font-medium leading-none">
                               GST LUT Form
@@ -852,7 +852,7 @@ const Header = () => {
                           </Link>
                           <Link
                             to="/gst-notice"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             <div className="text-sm font-medium leading-none">
                               GST Notice
@@ -865,7 +865,7 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/gst-registration-for-foreigners"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             <div className="text-sm font-medium leading-none">
                               GST Registration for Foreigners
@@ -877,7 +877,7 @@ const Header = () => {
                           </Link>
                           <Link
                             to="/gst-registration-amendment"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             <div className="text-sm font-medium leading-none">
                               GST Registration Amendment
@@ -888,7 +888,7 @@ const Header = () => {
                           </Link>
                           <Link
                             to="/gst-revocation"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             <div className="text-sm font-medium leading-none">
                               GST Revocation
@@ -899,7 +899,7 @@ const Header = () => {
                           </Link>
                           <Link
                             to="/gst-gstr-10"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             <div className="text-sm font-medium leading-none">
                               GSTR-10
@@ -918,7 +918,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:text-green-600 focus:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:text-green-600 h-auto text-xs">
+                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] data-[state=open]:bg-[#C4D9FF] data-[active]:bg-[#C4D9FF] focus:text-[#003366] h-auto text-xs">
                       Tax
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -926,37 +926,37 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/income-tax-e-filing-new"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Income Tax E-Filing
                           </Link>
                           <Link
                             to="/itr-1-return-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ITR-1 Return Filing
                           </Link>
                           <Link
                             to="/itr-2-return-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ITR-2 Return Filing
                           </Link>
                           <Link
                             to="/itr-3-return-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ITR-3 Return Filing
                           </Link>
                           <Link
                             to="/itr-4-return-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ITR-4 Return Filing
                           </Link>
                           <Link
                             to="/itr-5-return-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ITR-5 Return Filing
                           </Link>
@@ -964,37 +964,37 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/itr-6-return-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ITR-6 Return Filing
                           </Link>
                           <Link
                             to="/itr-7-return-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ITR-7 Return Filing
                           </Link>
                           <Link
                             to="/15ca-15cb-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             15CA - 15CB Filing
                           </Link>
                           <Link
                             to="/tan-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             TAN Registration
                           </Link>
                           <Link
                             to="/tds-return-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             TDS Return Filing
                           </Link>
                           <Link
                             to="/income-tax-notice"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Income Tax Notice
                           </Link>
@@ -1008,7 +1008,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:text-green-600 focus:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:text-green-600 h-auto text-xs">
+                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] data-[state=open]:bg-[#C4D9FF] data-[active]:bg-[#C4D9FF] focus:text-[#003366] h-auto text-xs">
                       MCA
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -1016,31 +1016,31 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/company-compliance"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Company Compliance
                           </Link>
                           <Link
                             to="/llp-compliance"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             LLP Compliance
                           </Link>
                           <Link
                             to="/opc-compliance"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             OPC Compliance
                           </Link>
                           <Link
                             to="/name-change-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Name Change - Company
                           </Link>
                           <Link
                             to="/registered-office-change-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Registered Office Change
                           </Link>
@@ -1048,31 +1048,31 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/din-ekyc-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             DIN eKYC Filing
                           </Link>
                           <Link
                             to="/din-reactivation"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             DIN Reactivation
                           </Link>
                           <Link
                             to="/director-change"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Director Change
                           </Link>
                           <Link
                             to="/remove-director"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Remove Director
                           </Link>
                           <Link
                             to="/adt1-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             ADT-1 Filing
                           </Link>
@@ -1080,31 +1080,31 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/dpt3-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             DPT-3 Filing
                           </Link>
                           <Link
                             to="/llp-form11-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             LLP Form 11 Filing
                           </Link>
                           <Link
                             to="/dormant-status-filing"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Dormant Status Filing
                           </Link>
                           <Link
                             to="/moa-amendment"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             MOA Amendment
                           </Link>
                           <Link
                             to="/aoa-amendment"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             AOA Amendment
                           </Link>
@@ -1112,31 +1112,31 @@ const Header = () => {
                         <div className="flex flex-col space-y-2 text-sm font-normal">
                           <Link
                             to="/authorized-capital-increase"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Authorized Capital Increase
                           </Link>
                           <Link
                             to="/share-transfer"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Share Transfer
                           </Link>
                           <Link
                             to="/Demat of Shares"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Demat of Shares
                           </Link>
                           <Link
                             to="/Winding Up - LLP"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Winding Up - LLP
                           </Link>
                           <Link
                             to="/Winding Up - Company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Winding Up - Company
                           </Link>
@@ -1149,19 +1149,19 @@ const Header = () => {
 
               <Link
                 to="/consultation"
-                className="px-1 py-1 text-gray-700 hover:text-green-600 transition-colors text-xs"
+                className="px-1 py-1 text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] transition-colors text-xs"
               >
                 Consultation
               </Link>
               <Link
                 to="/guide"
-                className="px-1 py-1 text-gray-700 hover:text-green-600 transition-colors text-xs"
+                className="px-1 py-1 text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] transition-colors text-xs"
               >
                 Guides
               </Link>
               <Link
                 to="/about-us"
-                className="px-1 py-1 text-gray-700 hover:text-green-600 transition-colors text-xs"
+                className="px-1 py-1 text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] transition-colors text-xs"
               >
                 About
               </Link>
@@ -1174,7 +1174,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:text-green-600 focus:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:text-green-600 h-auto text-xs">
+                    <NavigationMenuTrigger className="px-1 py-1 font-medium bg-transparent text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] data-[state=open]:bg-[#C4D9FF] data-[active]:bg-[#C4D9FF] focus:text-[#003366] h-auto text-xs">
                       Business
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -1185,25 +1185,25 @@ const Header = () => {
                           </h4>
                           <Link
                             to="/proprietorship"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Proprietorship
                           </Link>
                           <Link
                             to="/partnership"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Partnership
                           </Link>
                           <Link
                             to="/private-limited-company"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Private Ltd Company
                           </Link>
                           <Link
                             to="/limited-liability-partnership"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             LLP
                           </Link>
@@ -1214,25 +1214,25 @@ const Header = () => {
                           </h4>
                           <Link
                             to="/company-compliance"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Company Compliance
                           </Link>
                           <Link
                             to="/gst-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             GST Registration
                           </Link>
                           <Link
                             to="/trademark-registration"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Trademark
                           </Link>
                           <Link
                             to="/income-tax-e-filing-new"
-                            className="text-gray-600 hover:text-green-600"
+                            className="text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]"
                           >
                             Income Tax
                           </Link>
@@ -1245,25 +1245,25 @@ const Header = () => {
 
               <Link
                 to="/gst-registration"
-                className="px-1 py-1 text-gray-700 hover:text-green-600 transition-colors text-xs"
+                className="px-1 py-1 text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] transition-colors text-xs"
               >
                 GST
               </Link>
               <Link
                 to="/income-tax-e-filing-new"
-                className="px-1 py-1 text-gray-700 hover:text-green-600 transition-colors text-xs"
+                className="px-1 py-1 text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] transition-colors text-xs"
               >
                 Tax
               </Link>
               <Link
                 to="/trademark-registration"
-                className="px-1 py-1 text-gray-700 hover:text-green-600 transition-colors text-xs"
+                className="px-1 py-1 text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] transition-colors text-xs"
               >
                 Trademark
               </Link>
               <Link
                 to="/consultation"
-                className="px-1 py-1 text-gray-700 hover:text-green-600 transition-colors text-xs"
+                className="px-1 py-1 text-gray-700 hover:bg-[#C4D9FF] hover:text-[#003366] transition-colors text-xs"
               >
                 Consult
               </Link>
@@ -1281,7 +1281,7 @@ const Header = () => {
                     value={searchQuery}
                     onChange={handleSearchChange}
                     placeholder="Search..."
-                    className="pl-8 sm:pl-10 pr-6 sm:pr-8 py-1 sm:py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent w-32 sm:w-48 lg:w-64 text-xs sm:text-sm"
+                    className="pl-8 sm:pl-10 pr-6 sm:pr-8 py-1 sm:py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#003366] focus:border-transparent w-32 sm:w-48 lg:w-64 text-xs sm:text-sm"
                   />
                   {searchQuery && (
                     <button
@@ -1404,47 +1404,47 @@ const Header = () => {
               <div className="space-y-2">
                 <h3 className="font-semibold text-gray-900">Business Registration</h3>
                 <div className="pl-4 space-y-1">
-                  <Link to="/private-limited-company" className="block text-gray-600 hover:text-green-600">Private Limited Company</Link>
-                  <Link to="/limited-liability-partnership" className="block text-gray-600 hover:text-green-600">LLP</Link>
-                  <Link to="/one-person-company" className="block text-gray-600 hover:text-green-600">One Person Company</Link>
-                  <Link to="/partnership" className="block text-gray-600 hover:text-green-600">Partnership</Link>
-                  <Link to="/trust-registration" className="block text-gray-600 hover:text-green-600">Trust Registration</Link>
+                  <Link to="/private-limited-company" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Private Limited Company</Link>
+                  <Link to="/limited-liability-partnership" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">LLP</Link>
+                  <Link to="/one-person-company" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">One Person Company</Link>
+                  <Link to="/partnership" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Partnership</Link>
+                  <Link to="/trust-registration" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Trust Registration</Link>
                 </div>
               </div>
               
               <div className="space-y-2">
                 <h3 className="font-semibold text-gray-900">GST Services</h3>
                 <div className="pl-4 space-y-1">
-                  <Link to="/gst-registration" className="block text-gray-600 hover:text-green-600">GST Registration</Link>
-                  <Link to="/gst-return-filing" className="block text-gray-600 hover:text-green-600">GST Return Filing</Link>
-                  <Link to="/gst-annual-return-filing-gstr9" className="block text-gray-600 hover:text-green-600">GST Annual Return</Link>
-                  <Link to="/gst-lut-form" className="block text-gray-600 hover:text-green-600">GST LUT Form</Link>
+                  <Link to="/gst-registration" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">GST Registration</Link>
+                  <Link to="/gst-return-filing" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">GST Return Filing</Link>
+                  <Link to="/gst-annual-return-filing-gstr9" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">GST Annual Return</Link>
+                  <Link to="/gst-lut-form" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">GST LUT Form</Link>
                 </div>
               </div>
 
               <div className="space-y-2">
                 <h3 className="font-semibold text-gray-900">Trademark & IP</h3>
                 <div className="pl-4 space-y-1">
-                  <Link to="/trademark-registration" className="block text-gray-600 hover:text-green-600">Trademark Registration</Link>
-                  <Link to="/copyright-registration" className="block text-gray-600 hover:text-green-600">Copyright Registration</Link>
-                  <Link to="/patent-registration" className="block text-gray-600 hover:text-green-600">Patent Registration</Link>
+                  <Link to="/trademark-registration" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Trademark Registration</Link>
+                  <Link to="/copyright-registration" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Copyright Registration</Link>
+                  <Link to="/patent-registration" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Patent Registration</Link>
                 </div>
               </div>
 
               <div className="space-y-2">
                 <h3 className="font-semibold text-gray-900">Income Tax</h3>
                 <div className="pl-4 space-y-1">
-                  <Link to="/income-tax-e-filing-new" className="block text-gray-600 hover:text-green-600">Income Tax E-Filing</Link>
-                  <Link to="/business-income-tax" className="block text-gray-600 hover:text-green-600">Business Income Tax</Link>
+                  <Link to="/income-tax-e-filing-new" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Income Tax E-Filing</Link>
+                  <Link to="/business-income-tax" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Business Income Tax</Link>
                 </div>
               </div>
 
               <div className="space-y-2">
                 <h3 className="font-semibold text-gray-900">Other Services</h3>
                 <div className="pl-4 space-y-1">
-                  <Link to="/consultation" className="block text-gray-600 hover:text-green-600">Consultation</Link>
-                  <Link to="/demat-of-shares" className="block text-gray-600 hover:text-green-600">Demat of Shares</Link>
-                  <Link to="/udyam-registration" className="block text-gray-600 hover:text-green-600">Udyam Registration</Link>
+                  <Link to="/consultation" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Consultation</Link>
+                  <Link to="/demat-of-shares" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Demat of Shares</Link>
+                  <Link to="/udyam-registration" className="block text-gray-600 hover:bg-[#C4D9FF] hover:text-[#003366] focus:bg-[#C4D9FF] focus:text-[#003366]">Udyam Registration</Link>
                 </div>
               </div>
             </div>

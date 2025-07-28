@@ -6,6 +6,7 @@ import HeroSection from '@/components/digital-signature/HeroSection';
 import OffersSection from '@/components/digital-signature/OffersSection';
 import DetailsSection from '@/components/digital-signature/DetailsSection';
 import DocumentsSection from '@/components/digital-signature/DocumentsSection';
+import Sidebar from '@/components/digital-signature/Sidebar';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
@@ -16,11 +17,16 @@ const DigitalSignature = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="mt-4 grid gap-8">
-            <HeroSection />
-            <OffersSection />
-            <DocumentsSection />
-            <DetailsSection />
+          <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div className="lg:col-span-3 space-y-8">
+              <HeroSection />
+              <OffersSection />
+              <DocumentsSection />
+              <DetailsSection />
+            </div>
+            <div className="lg:col-span-1">
+              <Sidebar />
+            </div>
           </div>
         </main>
       </div>

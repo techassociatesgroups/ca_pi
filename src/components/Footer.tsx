@@ -54,7 +54,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#C4D9FF] text-[#22223B]">
+    <footer className="bg-white text-[#22223B]">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
@@ -88,12 +88,12 @@ const Footer = () => {
           {serviceCategories.map((category, index) => (
             <div key={index}>
               <h3 className="text-lg font-semibold mb-4 text-[#003366]">{category.title}</h3>
-              <ul className="space-y-2">
+              <ul className="flex flex-wrap gap-3">
                 {category.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
+                  <li key={linkIndex} className="mb-2">
                     <Link 
                       to={link.path} 
-                      className="text-[#003366] hover:text-[#001a33] transition-colors text-sm"
+                      className="bg-[#eaf3ff] hover:bg-[#cfe0ff] text-[#003366] px-4 py-2 rounded border border-[#b0c4e6] hover:border-[#003366] transition-colors text-sm whitespace-nowrap"
                     >
                       {link.name}
                     </Link>
@@ -106,12 +106,12 @@ const Footer = () => {
           {/* Company & Legal */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-[#003366]">Company</h3>
-            <ul className="space-y-2 mb-6">
+            <ul className="flex flex-wrap gap-3 mb-6">
               {companyLinks.map((link, index) => (
-                <li key={index}>
+                <li key={index} className="mb-2">
                   <Link 
                     to={link.path} 
-                    className="text-[#003366] hover:text-[#001a33] transition-colors text-sm"
+                    className="bg-[#eaf3ff] hover:bg-[#cfe0ff] text-[#003366] px-4 py-2 rounded border border-[#b0c4e6] hover:border-[#003366] transition-colors text-sm whitespace-nowrap"
                   >
                     {link.name}
                   </Link>
@@ -120,12 +120,12 @@ const Footer = () => {
             </ul>
 
             <h4 className="text-md font-semibold mb-3 text-[#003366]">Legal</h4>
-            <ul className="space-y-2">
+            <ul className="flex flex-wrap gap-3">
               {legalLinks.map((link, index) => (
-                <li key={index}>
+                <li key={index} className="mb-2">
                   <Link 
                     to={link.path} 
-                    className="text-[#003366] hover:text-[#001a33] transition-colors text-sm"
+                    className="bg-[#eaf3ff] hover:bg-[#cfe0ff] text-[#003366] px-4 py-2 rounded border border-[#b0c4e6] hover:border-[#003366] transition-colors text-sm whitespace-nowrap"
                   >
                     {link.name}
                   </Link>

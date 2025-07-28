@@ -34,7 +34,7 @@ const PopularSearches = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-[#C4D9FF] py-12">
       <div className="max-w-7xl mx-auto px-4">
         <h3 className="text-2xl font-bold text-gray-900 mb-8">Popular Searches</h3>
         <div className="flex flex-wrap gap-3">
@@ -42,7 +42,7 @@ const PopularSearches = () => {
             <a 
               key={index}
               href={item.href}
-              className="bg-white hover:bg-green-50 text-green-600 px-4 py-2 rounded border border-gray-200 hover:border-green-300 transition-colors text-sm"
+              className="bg-white hover:bg-[#eaf3ff] text-[#003366] px-4 py-2 rounded border border-[#b0c4e6] hover:border-[#003366] transition-colors text-sm"
             >
               {item.name}
             </a>

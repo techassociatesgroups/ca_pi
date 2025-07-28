@@ -50,8 +50,8 @@ const HeroSection = () => {
           </div>
           <div className="lg:text-right">
             <img 
-              src="/lovable-uploads/f6943072-16a1-4ed4-ada7-494ea3a433fe.png" 
-              alt="Udyam Registration" 
+              src="/assets/Udyam-registration.jpg" 
+              alt="Udyam Registration Certificate" 
               className="rounded-lg shadow-xl"
             />
           </div>

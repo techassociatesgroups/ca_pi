@@ -6,6 +6,7 @@ import HeroSection from '@/components/fssai-license/HeroSection';
 import OffersSection from '@/components/fssai-license/OffersSection';
 import DocumentsSection from '@/components/fssai-license/DocumentsSection';
 import DetailsSection from '@/components/fssai-license/DetailsSection';
+import Sidebar from '@/components/fssai-license/Sidebar';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
@@ -16,11 +17,16 @@ const FSSAiLicense = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="mt-4">
-            <HeroSection />
-            <OffersSection />
-            <DocumentsSection />
-            <DetailsSection />
+          <div className="mt-4 flex flex-col lg:flex-row gap-8">
+            <div className="flex-1 min-w-0">
+              <HeroSection />
+              <OffersSection />
+              <DocumentsSection />
+              <DetailsSection />
+            </div>
+            <div className="w-full lg:w-96 flex-shrink-0">
+              <Sidebar />
+            </div>
           </div>
         </main>
       </div>
