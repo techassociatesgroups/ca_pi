@@ -6,8 +6,8 @@ const HeroSection = () => {
       <div className="grid lg:grid-cols-2 gap-8 items-start">
         <div>
           <img
-            src="/lovable-uploads/cf8e8f5e-ca90-481e-a896-30d551e0e4c0.png"
-            alt="LLP Compliance"
+            src="/assets/Compliance-for-LLP.jpg"
+            alt="Compliance for LLP"
             className="rounded-lg shadow-lg w-full"
           />
         </div>
@@ -56,7 +56,10 @@ const HeroSection = () => {
                 LEDGERS Platform
               </li>
             </ul>
-            <button className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50">
+            <button
+              className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50"
+              onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+            >
               ADD
             </button>
           </div>

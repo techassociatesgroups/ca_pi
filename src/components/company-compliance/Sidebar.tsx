@@ -51,15 +51,6 @@ const Sidebar = () => {
             />
           </div>
         </div>
-        <div className="flex items-center">
-          <input
-            id="gst-credit"
-            name="gst-credit"
-            type="checkbox"
-            className="h-4 w-4 rounded border-gray-300 text-green-600 focus:ring-green-600"
-          />
-          <label htmlFor="gst-credit" className="ml-2 block text-sm text-gray-900">Enter GSTIN to get 18% GST Credit</label>
-        </div>
         <button
           type="submit"
           className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"

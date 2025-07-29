@@ -73,6 +73,7 @@ const HeroSection = () => {
                 <Button
                   variant="outline"
                   className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
+                  onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
                 >
                   ADD
                 </Button>

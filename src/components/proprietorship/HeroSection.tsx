@@ -101,7 +101,10 @@ const HeroSection = () => {
                     LEDGERS GST Software - 1 Year License
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
+                <Button
+                  className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+                >
                   Send Request
                 </Button>
               </CardContent>
@@ -136,7 +139,10 @@ const HeroSection = () => {
                     LEDGERS GST Software - 1 Year License
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
+                <Button
+                  className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+                >
                   Know More
                 </Button>
               </CardContent>

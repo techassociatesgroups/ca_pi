@@ -5,6 +5,7 @@ import Breadcrumb from '@/components/pf-registration/Breadcrumb';
 import HeroSection from '@/components/pf-registration/HeroSection';
 import OffersSection from '@/components/pf-registration/OffersSection';
 import DetailsSection from '@/components/pf-registration/DetailsSection';
+import Sidebar from '@/components/pf-registration/Sidebar';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
@@ -15,10 +16,15 @@ const PFRegistration = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="mt-4 space-y-8">
-            <HeroSection />
-            <OffersSection />
-            <DetailsSection />
+          <div className="mt-4 flex flex-col lg:flex-row gap-8">
+            <div className="flex-1 min-w-0 space-y-8">
+              <HeroSection />
+              <OffersSection />
+              <DetailsSection />
+            </div>
+            <div className="w-full lg:w-96 flex-shrink-0">
+              <Sidebar />
+            </div>
           </div>
         </main>
       </div>

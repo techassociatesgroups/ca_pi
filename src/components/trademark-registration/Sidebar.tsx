@@ -35,12 +35,6 @@ const Sidebar = () => {
                             <Input id="phone" type="tel" placeholder="Enter your phone number" className="rounded-l-none" />
                         </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                        <Checkbox id="gst-credit" />
-                        <label htmlFor="gst-credit" className="text-sm font-medium leading-none cursor-pointer">
-                            Enter GSTIN to get 18% GST Credit
-                        </label>
-                    </div>
                     <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 font-bold text-base">
                         Contact Us
                     </Button>

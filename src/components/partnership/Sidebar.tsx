@@ -1,15 +1,13 @@
 
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
-import { Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Phone } from "lucide-react";
 
 const Sidebar = () => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 sticky top-24">
-      <Phone className="mx-auto h-12 w-12 text-gray-400 mb-3" />
+    <aside className="bg-white p-6 rounded-lg shadow-sm sticky top-24">
+      <Phone className="h-12 w-12 text-gray-400 mx-auto mb-3" />
       <h3 className="text-xl font-bold text-center">Reach us now</h3>
       <p className="text-center text-sm text-gray-600 mt-2 mb-6">
         Fill out the form below and we'll contact you immediately.
@@ -32,15 +30,11 @@ const Sidebar = () => {
             <Input id="phone" type="tel" placeholder="Enter your phone number" className="rounded-l-none" />
           </div>
         </div>
-        <div className="flex items-center space-x-2">
-          <Checkbox id="gst-credit" />
-          <Label htmlFor="gst-credit" className="text-sm font-normal text-gray-600 cursor-pointer">Enter GSTIN to get 18% GST Credit</Label>
-        </div>
-        <Button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-base" size="lg">
+        <Button type="submit" className="w-full bg-green-500 hover:bg-green-600">
           Contact Us
         </Button>
       </form>
-    </div>
+    </aside>
   );
 };
 

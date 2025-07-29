@@ -51,7 +51,6 @@ const Sidebar = () => {
               <Input id="phone" placeholder="Enter your phone number" className="flex-1" />
             </div>
           </div>
-          <Input placeholder="Enter GSTIN to get 18% GST Credit" />
           <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 font-bold text-base">
             Contact Us
           </Button>

@@ -113,23 +113,6 @@ const Hero = () => {
                       <p className="text-xs text-gray-600">Success Rate</p>
                     </div>
                   </div>
-
-                  {/* App download section */}
-                  <div className="bg-blue-50 p-3 md:p-4 rounded-lg">
-                    <p className="text-[#0033cc] text-xs md:text-sm font-medium mb-2 md:mb-3 text-center">
-                      Download our App
-                    </p>
-                    <div className="flex flex-col space-y-1 md:space-y-2">
-                      <div className="flex items-center justify-center space-x-2 bg-[#0033cc] text-white px-3 md:px-4 py-1.5 md:py-2 rounded-lg text-xs hover:bg-blue-700 transition-colors cursor-pointer">
-                        <Download className="h-3 w-3 md:h-4 md:w-4" />
-                        <span>Google Play</span>
-                      </div>
-                      <div className="flex items-center justify-center space-x-2 bg-[#0033cc] text-white px-3 md:px-4 py-1.5 md:py-2 rounded-lg text-xs hover:bg-blue-700 transition-colors cursor-pointer">
-                        <Download className="h-3 w-3 md:h-4 md:w-4" />
-                        <span>App Store</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
