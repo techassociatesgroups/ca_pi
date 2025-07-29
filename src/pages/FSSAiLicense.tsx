@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/fssai-license/Breadcrumb';
 import HeroSection from '@/components/fssai-license/HeroSection';
-import OffersSection from '@/components/fssai-license/OffersSection';
 import DocumentsSection from '@/components/fssai-license/DocumentsSection';
 import DetailsSection from '@/components/fssai-license/DetailsSection';
 import Sidebar from '@/components/fssai-license/Sidebar';
@@ -20,7 +19,6 @@ const FSSAiLicense = () => {
           <div className="mt-4 flex flex-col lg:flex-row gap-8">
             <div className="flex-1 min-w-0">
               <HeroSection />
-              <OffersSection />
               <DocumentsSection />
               <DetailsSection />
             </div>

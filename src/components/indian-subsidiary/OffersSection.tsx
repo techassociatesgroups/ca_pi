@@ -51,6 +51,7 @@ const OfferCard = ({
     <Button
       variant="outline"
       className="mt-6 w-full text-green-600 border-green-600 hover:bg-green-50 hover:text-green-700"
+      onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
     >
       ADD
     </Button>
@@ -101,34 +102,6 @@ const OffersSection = () => {
         <a href="#" className="text-blue-600 hover:underline">
           Refer a Friend
         </a>
-      </div>
-
-      <h3 className="text-xl font-bold text-gray-800 mt-8 mb-4">
-        Offers and discounts
-      </h3>
-      <div className="space-y-4">
-        <div className="flex items-center p-4 border rounded-lg">
-          <img
-            src="assets/ledger.png"
-            alt="Ledgers Logo"
-            className="h-10 w-10 mr-4"
-          />
-          <div>
-            <p className="font-semibold">LEDGERS - Compliance Platform</p>
-            <p className="text-sm text-gray-600">
-              Invoicing, GST Filing, Banking and Payroll
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center p-4 border rounded-lg">
-          <img src="assets/gst.jpg" alt="GSN Logo" className="h-10 w-10 mr-4" />
-          <div>
-            <p className="font-semibold">Save 18% with GST Registration</p>
-            <p className="text-sm text-gray-600">
-              Get GST eInvoice with Input Tax Credit
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

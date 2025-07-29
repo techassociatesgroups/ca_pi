@@ -30,9 +30,9 @@ const HeroSection = () => {
         </div>
         <div className="relative">
           <img
-            src="/lovable-uploads/e34f826f-bf81-407b-939d-2b3070cfb1ed.png"
-            alt="Income Tax E-Filing"
-            className="w-full h-full object-cover"
+            src="/assets/income tax.jpg"
+            alt="Income Tax Stamp"
+            className="w-full h-full object-contain rounded-lg"
           />
         </div>
       </div>

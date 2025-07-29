@@ -3,9 +3,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/professional-tax-registration/Breadcrumb';
 import HeroSection from '@/components/professional-tax-registration/HeroSection';
-import OffersSection from '@/components/professional-tax-registration/OffersSection';
 import DetailsSection from '@/components/professional-tax-registration/DetailsSection';
 import DocumentsSection from '@/components/professional-tax-registration/DocumentsSection';
+import Sidebar from '@/components/professional-tax-registration/Sidebar';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
@@ -16,11 +16,15 @@ const ProfessionalTaxRegistration = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="mt-4 space-y-8">
-            <HeroSection />
-            <OffersSection />
-            <DetailsSection />
-            <DocumentsSection />
+          <div className="mt-4 flex flex-col lg:flex-row gap-8">
+            <div className="flex-1 min-w-0 space-y-8">
+              <HeroSection />
+              <DetailsSection />
+              <DocumentsSection />
+            </div>
+            <div className="w-full lg:w-96 flex-shrink-0">
+              <Sidebar />
+            </div>
           </div>
         </main>
       </div>

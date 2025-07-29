@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/digital-signature/Breadcrumb';
 import HeroSection from '@/components/digital-signature/HeroSection';
-import OffersSection from '@/components/digital-signature/OffersSection';
 import DetailsSection from '@/components/digital-signature/DetailsSection';
 import DocumentsSection from '@/components/digital-signature/DocumentsSection';
 import Sidebar from '@/components/digital-signature/Sidebar';
@@ -20,7 +19,6 @@ const DigitalSignature = () => {
           <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div className="lg:col-span-3 space-y-8">
               <HeroSection />
-              <OffersSection />
               <DocumentsSection />
               <DetailsSection />
             </div>
