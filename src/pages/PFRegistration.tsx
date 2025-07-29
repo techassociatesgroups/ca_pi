@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/pf-registration/Breadcrumb';
 import HeroSection from '@/components/pf-registration/HeroSection';
-import OffersSection from '@/components/pf-registration/OffersSection';
 import DetailsSection from '@/components/pf-registration/DetailsSection';
 import Sidebar from '@/components/pf-registration/Sidebar';
 import { Button } from '@/components/ui/button';
@@ -16,6 +15,7 @@ const PFRegistration = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
+<<<<<<< HEAD
           <div className="mt-4 flex flex-col lg:flex-row gap-8">
             <div className="flex-1 min-w-0 space-y-8">
               <HeroSection />
@@ -25,6 +25,12 @@ const PFRegistration = () => {
             <div className="w-full lg:w-96 flex-shrink-0">
               <Sidebar />
             </div>
+=======
+          <div className="mt-4 space-y-8">
+            <HeroSection />
+            
+            <DetailsSection />
+>>>>>>> ea0d1a36680de17de3db945d2d5d46ee2515adbd
           </div>
         </main>
       </div>
