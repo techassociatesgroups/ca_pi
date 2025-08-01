@@ -1,28 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Check } from "lucide-react";
-import { useCart } from "@/contexts/CartContext";
-import { toast } from "sonner";
+
 
 const HeroSection = () => {
-  const { addToCart } = useCart();
 
   const handleAddStartupIndia = () => {
-    addToCart({
-      id: "startup-india-basic",
-      name: "Startup India Registration",
-      price: 3999,
-    });
-    toast.success("Startup India Registration added to cart!");
+    window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank');
   };
 
   const handleAddStartupIndiaDSC = () => {
-    addToCart({
-      id: "startup-india-dsc",
-      name: "Startup India + DSC",
-      price: 5999,
-    });
-    toast.success("Startup India + DSC added to cart!");
+    window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank');
   };
 
   return (

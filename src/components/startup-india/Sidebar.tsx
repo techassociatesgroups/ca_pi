@@ -2,29 +2,18 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
-import { useCart } from '@/contexts/CartContext';
-import { toast } from 'sonner';
+import { Phone } from "lucide-react";
 
 const Sidebar = () => {
-    const { addToCart } = useCart();
-
-    const handleAddToCart = () => {
-        addToCart({
-            id: 'startup-india-registration',
-            name: 'Startup India Registration',
-            price: 3999
-        });
-        toast.success('Startup India Registration added to cart!');
-    };
 
     return (
         <Card>
-            <CardHeader>
-                <CardTitle>Get Expert Assistance</CardTitle>
-            </CardHeader>
-            <CardContent>
+            <CardContent className="p-6">
+                <Phone className="mx-auto h-12 w-12 text-gray-400 mb-3" />
+                <h3 className="text-xl font-bold text-center">Reach us now</h3>
+                <p className="text-center text-sm text-gray-600 mt-2 mb-6">
+                    Fill out the form below and we'll contact you immediately.
+                </p>
                 <form className="space-y-4">
                     <div>
                         <Label htmlFor="name">Name</Label>
@@ -36,35 +25,20 @@ const Sidebar = () => {
                     </div>
                     <div>
                         <Label htmlFor="phone">Phone Number</Label>
-                        <Input id="phone" placeholder="Enter your phone number" />
-                    </div>
-                    <div>
-                        <Label htmlFor="city">City</Label>
-                        <Input id="city" placeholder="Enter your city" />
-                    </div>
-                    <div>
-                        <Label htmlFor="service">Service</Label>
-                        <Select>
-                            <SelectTrigger>
-                                <SelectValue placeholder="Select a service" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="startup-india">Startup India Registration</SelectItem>
-                                <SelectItem value="gst">GST Registration</SelectItem>
-                                <SelectItem value="trademark">Trademark Registration</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
-                    <div>
-                        <Label htmlFor="message">Message</Label>
-                        <Textarea id="message" placeholder="Your message" />
+                        <div className="flex">
+                            <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md">
+                                +91
+                            </span>
+                            <Input id="phone" type="tel" placeholder="Enter your phone number" className="rounded-l-none" />
+                        </div>
                     </div>
                     <Button 
-                        type="button" 
-                        onClick={handleAddToCart}
-                        className="w-full bg-green-500 hover:bg-green-600"
+                        type="submit" 
+                        className="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-base" 
+                        size="lg"
+                        onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
                     >
-                        Add to Cart
+                        Contact Us
                     </Button>
                 </form>
             </CardContent>

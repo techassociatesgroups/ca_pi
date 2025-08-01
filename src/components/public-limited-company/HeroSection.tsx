@@ -87,7 +87,10 @@ const HeroSection = () => {
               </li>
             </ul>
             <div className="text-right mt-4">
-              <Button className="bg-green-500 hover:bg-green-600 text-white font-bold">
+              <Button 
+                className="bg-green-500 hover:bg-green-600 text-white font-bold"
+                onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+              >
                 ADD
               </Button>
             </div>

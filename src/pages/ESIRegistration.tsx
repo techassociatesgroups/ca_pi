@@ -3,8 +3,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/esi-registration/Breadcrumb';
 import HeroSection from '@/components/esi-registration/HeroSection';
-import OffersSection from '@/components/esi-registration/OffersSection';
+
 import DetailsSection from '@/components/esi-registration/DetailsSection';
+import Sidebar from '@/components/esi-registration/Sidebar';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
@@ -15,10 +16,14 @@ const ESIRegistration = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="mt-4 space-y-8">
-            <HeroSection />
-            <OffersSection />
-            <DetailsSection />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-4">
+            <div className="lg:col-span-8 space-y-8">
+              <HeroSection />
+              <DetailsSection />
+            </div>
+            <aside className="lg:col-span-4">
+              <Sidebar />
+            </aside>
           </div>
         </main>
       </div>

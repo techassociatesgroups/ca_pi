@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/trust-registration/Breadcrumb';
 import HeroSection from '@/components/trust-registration/HeroSection';
 import PricingSection from '@/components/trust-registration/PricingSection';
-import OffersSection from '@/components/consultation/OffersSection';
+
 import DetailsSection from '@/components/trust-registration/DetailsSection';
 import DocumentsSection from '@/components/trust-registration/DocumentsSection';
 import Sidebar from '@/components/trust-registration/Sidebar';
@@ -20,7 +20,6 @@ const TrustRegistration = () => {
             <div className="lg:col-span-8 space-y-8">
               <HeroSection />
               <PricingSection />
-              <OffersSection />
               <DetailsSection />
               <DocumentsSection />
             </div>

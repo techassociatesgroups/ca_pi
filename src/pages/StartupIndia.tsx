@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/startup-india/Breadcrumb';
 import HeroSection from '@/components/startup-india/HeroSection';
-import OffersSection from '@/components/startup-india/OffersSection';
+
 import DetailsSection from '@/components/startup-india/DetailsSection';
 import DocumentsSection from '@/components/startup-india/DocumentsSection';
 import Sidebar from '@/components/startup-india/Sidebar';
@@ -21,7 +21,6 @@ const StartupIndia = () => {
           <div className="grid grid-cols-12 gap-8 mt-4">
             <div className="col-span-12 lg:col-span-9">
               <HeroSection />
-              <OffersSection />
               <DetailsSection />
               <DocumentsSection />
             </div>

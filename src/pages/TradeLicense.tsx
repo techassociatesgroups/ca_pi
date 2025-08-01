@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/trade-license/Breadcrumb';
 import HeroSection from '@/components/trade-license/HeroSection';
-import OffersSection from '@/components/trade-license/OffersSection';
+
 import DetailsSection from '@/components/trade-license/DetailsSection';
 import Sidebar from '@/components/trade-license/Sidebar';
 import { Button } from '@/components/ui/button';
@@ -19,7 +19,6 @@ const TradeLicense = () => {
           <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div className="lg:col-span-3 space-y-8">
               <HeroSection />
-              <OffersSection />
               <DetailsSection />
             </div>
             <div className="lg:col-span-1">

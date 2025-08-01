@@ -15,8 +15,8 @@ const HeroSection = () => {
     <Card className="overflow-hidden">
       <div className="grid md:grid-cols-12">
         <div className="md:col-span-4">
-            <div className="h-full min-h-[550px] bg-gray-200">
-                <img src="/lovable-uploads/f7bb8802-2d69-4ca4-9fac-23f73405ed89.png" alt="Shop and Establishment Registration" className="w-full h-full object-cover" />
+            <div className="h-full min-h-[300px] bg-gray-200">
+                <img src="/assets/shop-and-establishment-act.png" alt="Shop and Establishment Registration" className="w-full h-full object-contain" />
             </div>
         </div>
         <div className="md:col-span-8 p-8">
@@ -46,32 +46,44 @@ const HeroSection = () => {
           </Select>
           
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Card className="border-green-300 border-dashed">
-                <CardContent className="p-4">
-                <img src="https://indiafilings.com/images/approved-by-ledgers.svg" alt="Approved by Ledgers" className="h-5 mb-2" />
-                <h3 className="font-bold mb-2">Andhra Pradesh</h3>
-                <ul className="space-y-1 text-xs text-gray-600">
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />Application Preparation</li>
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />Shop And Establishment Act Certificate</li>
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />Valid for 1 calendar year</li>
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />LEDGERS Platform</li>
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />100% Refund Guarantee</li>
+            <Card className="bg-green-50 border-green-200">
+                <CardContent className="p-6">
+                <div className="text-green-600 text-sm font-medium mb-1">3 Exclusive Offers</div>
+                <h3 className="font-bold text-lg mb-4">Andhra Pradesh</h3>
+                <ul className="space-y-2 text-sm text-gray-700 mb-6">
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>Application Preparation</li>
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>Shop And Establishment Act Certificate</li>
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>Valid for 1 calendar year</li>
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>LEDGERS Platform</li>
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>100% Refund Guarantee</li>
                 </ul>
-                <Button variant="outline" className="w-full mt-4 border-green-600 text-green-600 hover:bg-green-50 hover:text-green-700">ADD</Button>
+                <Button 
+                    className="w-full bg-purple-400 hover:bg-purple-500 text-white rounded-lg flex items-center justify-center"
+                    onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+                >
+                    <span>Send Request</span>
+                    <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
                 </CardContent>
             </Card>
-            <Card className="border-green-300 border-dashed">
-                <CardContent className="p-4">
-                <img src="https://indiafilings.com/images/approved-by-ledgers.svg" alt="Approved by Ledgers" className="h-5 mb-2" />
-                <h3 className="font-bold mb-2">Delhi</h3>
-                <ul className="space-y-1 text-xs text-gray-600">
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />Application Preparation</li>
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />Shop And Establishment Act Certificate</li>
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />Valid for 1 calendar year</li>
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />LEDGERS Platform</li>
-                    <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />100% Refund Guarantee</li>
+            <Card className="bg-yellow-50 border-yellow-200">
+                <CardContent className="p-6">
+                <div className="text-orange-600 text-sm font-medium mb-1">2 Exclusive Offers</div>
+                <h3 className="font-bold text-lg mb-4">Delhi</h3>
+                <ul className="space-y-2 text-sm text-gray-700 mb-6">
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>Application Preparation</li>
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>Shop And Establishment Act Certificate</li>
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>Valid for 1 calendar year</li>
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>LEDGERS Platform</li>
+                    <li className="flex items-center"><div className="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>100% Refund Guarantee</li>
                 </ul>
-                <Button variant="outline" className="w-full mt-4 border-green-600 text-green-600 hover:bg-green-50 hover:text-green-700">ADD</Button>
+                <Button 
+                    className="w-full bg-purple-400 hover:bg-purple-500 text-white rounded-lg flex items-center justify-center"
+                    onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
+                >
+                    <span>Send Request</span>
+                    <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
                 </CardContent>
             </Card>
           </div>

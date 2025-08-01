@@ -3,9 +3,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/shop-and-establishment-act/Breadcrumb';
 import HeroSection from '@/components/shop-and-establishment-act/HeroSection';
-import OffersSection from '@/components/shop-and-establishment-act/OffersSection';
+
 import DetailsSection from '@/components/shop-and-establishment-act/DetailsSection';
 import DocumentsSection from '@/components/shop-and-establishment-act/DocumentsSection';
+import Sidebar from '@/components/shop-and-establishment-act/Sidebar';
+
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
@@ -16,11 +18,15 @@ const ShopAndEstablishmentAct = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="mt-4 grid gap-8">
-            <HeroSection />
-            <OffersSection />
-            <DocumentsSection />
-            <DetailsSection />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-4">
+            <div className="lg:col-span-8 space-y-8">
+              <HeroSection />
+              <DocumentsSection />
+              <DetailsSection />
+            </div>
+            <aside className="lg:col-span-4">
+              <Sidebar />
+            </aside>
           </div>
         </main>
       </div>

@@ -6,7 +6,7 @@ import HeroSection from '@/components/section8-company/HeroSection';
 import Sidebar from '@/components/section8-company/Sidebar';
 import DetailsSection from '@/components/section8-company/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
-import OffersSection from '@/components/consultation/OffersSection';
+
 import DocumentsSection from '@/components/section8-company/DocumentsSection';
 
 const Section8Company = () => {
@@ -19,7 +19,6 @@ const Section8Company = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-4">
             <div className="lg:col-span-8 space-y-8">
               <HeroSection />
-              <OffersSection />
               <DetailsSection />
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">Proprietorship vs Limited Liability Partnership (LLP) vs Company</h2>

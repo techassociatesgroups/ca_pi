@@ -3,8 +3,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/import-export-code/Breadcrumb';
 import HeroSection from '@/components/import-export-code/HeroSection';
-import OffersSection from '@/components/import-export-code/OffersSection';
+
 import DetailsSection from '@/components/import-export-code/DetailsSection';
+import Sidebar from '@/components/import-export-code/Sidebar';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
@@ -15,10 +16,14 @@ const ImportExportCode = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="mt-4">
-            <HeroSection />
-            <OffersSection />
-            <DetailsSection />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-4">
+            <div className="lg:col-span-8 space-y-8">
+              <HeroSection />
+              <DetailsSection />
+            </div>
+            <aside className="lg:col-span-4">
+              <Sidebar />
+            </aside>
           </div>
         </main>
       </div>
