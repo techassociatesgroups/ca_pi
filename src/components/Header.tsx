@@ -1385,7 +1385,7 @@ const Header = () => {
               <div className="flex items-center space-x-2">
                 <Link
                   to="/login"
-                  className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors"
+                  className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors"
                 >
                   <User className="h-4 w-4 sm:h-5 sm:w-5" />
                   <span className="text-xs sm:text-sm font-medium hidden sm:inline">

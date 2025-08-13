@@ -124,20 +124,20 @@ const Services = () => {
                 <div 
                   key={index} 
                   className={`bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative ${
-                    service.popular ? 'ring-2 ring-green-500' : ''
+                    service.popular ? 'ring-2 ring-orange-500' : ''
                   }`}
                 >
                   {service.popular && (
                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                         Most Popular
                       </span>
                     </div>
                   )}
                   
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <service.icon className="h-8 w-8 text-green-600" />
+                    <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <service.icon className="h-8 w-8 text-orange-600" />
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       {service.title}
@@ -145,12 +145,12 @@ const Services = () => {
                     <p className="text-gray-600 text-sm mb-4">
                       {service.description}
                     </p>
-                    <div className="text-2xl font-bold text-green-600 mb-4">
+                    <div className="text-2xl font-bold text-orange-600 mb-4">
                       {service.price}
                     </div>
                     <Link 
                       to={service.link}
-                      className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors inline-block text-center"
+                      className="w-full bg-orange-600 text-white py-2 px-4 rounded-md hover:bg-orange-700 transition-colors inline-block text-center"
                     >
                       Get Started
                     </Link>

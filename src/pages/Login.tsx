@@ -102,15 +102,12 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-white flex items-center justify-center p-4">
       <div className="max-w-md w-full">
         {/* Header */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center mb-6">
-            <div className="bg-gradient-to-r from-orange-400 to-green-500 text-white px-4 py-2 rounded-full text-xl font-bold mr-2">
-              CA
-            </div>
-            <span className="text-green-600 text-xl font-bold">PI</span>
+            <img src="/assets/logo.ico.jpg" alt="CAPI Consultants LLP Logo" className="h-14 w-auto mr-2" />
           </Link>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             {isLogin ? 'Welcome Back' : 'Create Account'}
@@ -124,7 +121,7 @@ const Login = () => {
         </div>
 
         {/* Login Form */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
+        <div className="bg-blue-50 rounded-xl shadow-lg p-8">
           {/* Google Login */}
           <button
             onClick={handleGoogleLogin}
@@ -153,39 +150,39 @@ const Login = () => {
             {!isLogin && (
               <div className="relative">
                 <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  value={fullName}
-                  onChange={(e) => setFullName(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  required={!isLogin}
-                />
+                                 <input
+                   type="text"
+                   placeholder="Full Name"
+                   value={fullName}
+                   onChange={(e) => setFullName(e.target.value)}
+                   className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent"
+                   required={!isLogin}
+                 />
               </div>
             )}
 
             <div className="relative">
               <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-              <input
-                type="email"
-                placeholder="Email Address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                required
-              />
+                             <input
+                 type="email"
+                 placeholder="Email Address"
+                 value={email}
+                 onChange={(e) => setEmail(e.target.value)}
+                 className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent"
+                 required
+               />
             </div>
 
             <div className="relative">
               <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-              <input
-                type={showPassword ? 'text' : 'password'}
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="w-full pl-10 pr-12 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                required
-              />
+                             <input
+                 type={showPassword ? 'text' : 'password'}
+                 placeholder="Password"
+                 value={password}
+                 onChange={(e) => setPassword(e.target.value)}
+                 className="w-full pl-10 pr-12 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent"
+                 required
+               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
@@ -195,11 +192,11 @@ const Login = () => {
               </button>
             </div>
 
-            <button
-              type="submit"
-              disabled={isLoading}
-              className="w-full bg-green-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-green-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-            >
+                         <button
+               type="submit"
+               disabled={isLoading}
+               className="w-full bg-blue-800 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-900 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+             >
               {isLoading ? 'Please wait...' : (isLogin ? 'Sign In' : 'Create Account')}
             </button>
           </form>
@@ -208,10 +205,10 @@ const Login = () => {
           <div className="mt-6 text-center">
             <p className="text-gray-600">
               {isLogin ? "Don't have an account? " : "Already have an account? "}
-              <button
-                onClick={() => setIsLogin(!isLogin)}
-                className="text-green-600 font-medium hover:text-green-700"
-              >
+                             <button
+                 onClick={() => setIsLogin(!isLogin)}
+                 className="text-blue-800 font-medium hover:text-blue-900"
+               >
                 {isLogin ? 'Sign up' : 'Sign in'}
               </button>
             </p>

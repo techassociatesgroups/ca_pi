@@ -77,73 +77,73 @@ const HeroSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <Card className="border-green-500 border-2">
-              <CardContent className="p-4">
-                <div className="text-xs text-green-600 font-semibold bg-green-100 px-2 py-1 rounded-full inline-block">
-                  2 Exclusive Offers
+            <Card className="border border-gray-200 bg-green-50">
+              <CardContent className="p-6">
+                <div className="text-sm font-bold text-green-700 mb-4">
+                  3 Exclusive Offers
                 </div>
-                <h4 className="font-bold mt-2">GST Software & Registration</h4>
-                <ul className="mt-2 space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    GST Registration Application
+                <h4 className="text-xl font-bold text-gray-800 mb-4">GST Software & Registration</h4>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">GST Registration Application</span>
                   </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    DIY GST Clarification
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">DIY GST Clarification</span>
                   </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    DIY GST Filing
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    LEDGERS GST Software - 1 Year License
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">LEDGERS GST Software - 1 Year License</span>
                   </li>
                 </ul>
                 <Button
-                  className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  className="w-full bg-purple-400 hover:bg-purple-500 text-white font-medium py-3 rounded-lg"
                   onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
                 >
-                  Send Request
+                  ✏️ Send Request
                 </Button>
               </CardContent>
             </Card>
-            <Card>
-              <CardContent className="p-4">
-                <div className="text-xs text-green-600 font-semibold bg-green-100 px-2 py-1 rounded-full inline-block">
+            <Card className="border border-gray-200 bg-orange-50">
+              <CardContent className="p-6">
+                <div className="text-sm font-bold text-orange-600 mb-4">
                   2 Exclusive Offers
                 </div>
-                <h4 className="font-bold mt-2">
+                <h4 className="text-xl font-bold text-gray-800 mb-4">
                   GST Filing & Registration - 6 Months
                 </h4>
-                <ul className="mt-2 space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    GST Registration Application
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">GST Registration Application</span>
                   </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    DIY GST Clarification
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">GST Filing by Accountant 6 Months</span>
                   </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    GST Filing by Accountant 6 Months
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">GST Filing Training & Setup</span>
                   </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    GST Filing Training & Setup
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">Government Fee & Stamp Duty</span>
                   </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />{" "}
-                    LEDGERS GST Software - 1 Year License
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">DSC Downloading & Shipping Support</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 shrink-0" />
+                    <span className="text-gray-700">LEDGERS GST Software - 1 Year License</span>
                   </li>
                 </ul>
                 <Button
-                  className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  className="w-full bg-purple-400 hover:bg-purple-500 text-white font-medium py-3 rounded-lg"
                   onClick={() => window.open('https://forms.gle/rh7pCaqQSELtPwJz6', '_blank')}
                 >
-                  Know More
+                  ✏️ Send Request
                 </Button>
               </CardContent>
             </Card>
@@ -157,41 +157,7 @@ const HeroSection = () => {
             </Link>
           </div>
 
-          <div className="mt-6">
-            <h3 className="text-xl font-bold text-gray-800">
-              Offers and discounts
-            </h3>
-            <div className="mt-4 space-y-3">
-              <div className="flex items-center p-3 border rounded-lg">
-                <img
-                  src="assets/ledger.png"
-                  alt="Ledgers"
-                  className="w-10 h-10 mr-4"
-                />
-                <div>
-                  <p className="font-semibold">LEDGERS - Compliance Platform</p>
-                  <p className="text-sm text-gray-500">
-                    Invoicing, GST Filing, Banking and Payroll
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center p-3 border rounded-lg">
-                <img
-                  src="assets/gst.jpg"
-                  alt="GIN"
-                  className="w-10 h-10 mr-4"
-                />
-                <div>
-                  <p className="font-semibold">
-                    Save 18% with GST Registration
-                  </p>
-                  <p className="text-sm text-gray-500">
-                    Get GST eInvoice with Input Tax Credit
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
